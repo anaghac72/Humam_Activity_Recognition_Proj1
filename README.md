@@ -4,7 +4,7 @@
 |:----------------|:------------:|:---------------:|
 | Anagha C        | DACS         |     253126      |   
 | BEN FLIS ZIYA   | CSDA         |     253018      |
-| LANIYA MOHAN    | BioAI        |                 |
+| LANIYA MOHAN    | BioAI        |     253218             |
 
 # Dataset
 Dataset link:https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz8El4YFV?usp=drive_link
