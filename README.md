@@ -36,6 +36,6 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 
 |Model	| Accuracy |
 |-------|----------|
-| SVM	  |   ~91%   |
-|Random Forest |	~94% |
+| SVM	  |   ~92%   |
+|Random Forest |	~95% |
 | LSTM	|~95%       |
