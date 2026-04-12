@@ -31,3 +31,11 @@ Class Distribution:-
 The dataset is fairly balanced across all six activities.
 
 Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz8El4YFV?usp=drive_link
+
+# Results:
+
+|Model	| Accuracy |
+|-------|----------|
+| SVM	  |   ~91%   |
+|Random Forest |	~94% |
+| LSTM	|~95%       |
