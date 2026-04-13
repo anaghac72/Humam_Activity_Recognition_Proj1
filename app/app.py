@@ -15,7 +15,10 @@ st.set_page_config(
 # -----------------------
 # LOAD MODEL
 # -----------------------
-model = joblib.load("rf_model.pkl")  # or svm_model.pkl
+import os
+
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "model", "rf_model.pkl")
+model = joblib.load(MODEL_PATH)  # or svm_model.pkl
 
 # -----------------------
 # LABEL MAP
