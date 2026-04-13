@@ -34,8 +34,6 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 
 # Methdology Overview:
 
-## 🔧 Methods
-
 ### Data Preprocessing
 
 | Step           | Description                                                                             |
