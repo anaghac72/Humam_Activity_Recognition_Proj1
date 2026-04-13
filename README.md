@@ -102,6 +102,6 @@ Generalization on Unseen Subjects
 Model Comparison & Insights
 
 ```
-# Streamlit App
-link : http://192.168.1.4:8502
+# Live Streamlit Deployment
+https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app
 
