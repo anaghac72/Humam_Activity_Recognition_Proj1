@@ -123,11 +123,12 @@ confusion matrix:
 
 
 
-
-
 ## Model Comparison
-<img width="753" height="195" alt="image" src="https://github.com/user-attachments/assets/94512ffc-f82b-4fac-ae1f-1ceca730ac78" />
-<img width="567" height="455" alt="image" src="https://github.com/user-attachments/assets/5f132feb-9783-4c8f-a5c1-1d9faeac3054" />
+<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/f1cb7fcc-68bc-44c8-8dcb-4d82335cbefb" />
+### Accuract Comparison
+<img width="567" height="455" alt="image" src="https://github.com/user-attachments/assets/8ffc85d4-7260-4b1b-aa50-6f7770248ea0" />
+
+
 
 
 
