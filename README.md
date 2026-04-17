@@ -155,7 +155,30 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 </p>
 
 <br>
-### LSTM(Long Short Term Memory)
+
+###  LSTM (Long Short Term Memory)
+
+#### Classification Report
+
+<br>
+
+<p align="center">
+   <img width="663" height="501" alt="image" src="https://github.com/user-attachments/assets/741a999f-9e92-49cf-b6e6-48f9239ff1f4" />
+
+</p> 
+
+<br>
+
+####  Confusion Matrix
+
+<br>
+
+<p align="center">
+  <img width="649" height="547" alt="image" src="https://github.com/user-attachments/assets/dd3f40a4-9ced-4428-b9b1-82c5272681dc" />
+
+</p>
+
+<br>
 
 
 
