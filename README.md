@@ -97,6 +97,40 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 | Unseen Data Testing      | Models are evaluated on subjects not seen during training |
 | Cross-Subject Validation | Ensures robustness and real-world applicability           |
 | Model Comparison         | Performance of SVM, Random Forest, and LSTM is analyzed   |
+
+# Results Summary
+|     Model               |    Accuracy   |
+| ----------------------- |  ------------ |
+|     SVM                 |    ~ 95%      |
+|   Random Forest         |    ~ 93%      |
+|   LSTM                  |    ~ 92%      |
+
+## Evaluation Metrics :-
+### Random Forest  
+classification report:
+<img width="740" height="420" alt="image" src="https://github.com/user-attachments/assets/8e9842e1-d3cf-4da4-b09e-5eeadf8794ce" />
+confusion matrix:
+<img width="519" height="435" alt="image" src="https://github.com/user-attachments/assets/611af314-c6d7-40d5-aa58-e749d449ffc1" />
+
+### SVM(Support Vector Machine)
+classification report:
+<img width="732" height="399" alt="image" src="https://github.com/user-attachments/assets/e0cb976f-8190-46e2-adad-58d25d7f9e13" />
+confusion matrix:
+<img width="519" height="435" alt="image" src="https://github.com/user-attachments/assets/ab7187fc-5b48-4580-8ca9-9107353d05ad" />
+
+### LSTM(Long Short Term Memory)
+
+
+
+
+
+
+## Model Comparison
+<img width="753" height="195" alt="image" src="https://github.com/user-attachments/assets/94512ffc-f82b-4fac-ae1f-1ceca730ac78" />
+<img width="567" height="455" alt="image" src="https://github.com/user-attachments/assets/5f132feb-9783-4c8f-a5c1-1d9faeac3054" />
+
+
+
 # Live Streamlit Deployment
 https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app
 
