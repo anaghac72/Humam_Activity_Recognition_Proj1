@@ -183,7 +183,38 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 
 <br>
 
+## 📸 Application Screenshots
 
+<br>
+
+### 🔗 Live Application
+👉 https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app/
+
+<br>
+
+### 🖥️ Home Interface
+
+<p align="center">
+  <img src="https://via.placeholder.com/800x400.png?text=Streamlit+App+Home+Screen" width="800"/>
+</p>
+
+<br>
+
+### 📂 File Upload & Prediction
+
+<p align="center">
+  <img src="https://via.placeholder.com/800x400.png?text=CSV+Upload+and+Prediction" width="800"/>
+</p>
+
+<br>
+
+### 📊 Prediction Output & Visualization
+
+<p align="center">
+  <img src="https://via.placeholder.com/800x400.png?text=Prediction+Results+Graphs" width="800"/>
+</p>
+
+<br>
 
 
 # Live Streamlit Deployment
