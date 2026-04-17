@@ -141,7 +141,7 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e0cb976f-8190-46e2-adad-58d25d7f9e13" width="500" height="400"/>
+  <img src="https://github.com/user-attachments/assets/e0cb976f-8190-46e2-adad-58d25d7f9e13" width="500" />
 </p>
 
 <br>
