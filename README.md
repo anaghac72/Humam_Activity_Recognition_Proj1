@@ -106,34 +106,55 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 |   Random Forest         |    ~ 93%      |
 |   LSTM                  |    ~ 92%      |
 
-## Evaluation Metrics :-
-### Random Forest  
-#### classification report:
-<br>
-<p align="center">
-<img width="740" height="420" alt="image" src="https://github.com/user-attachments/assets/8e9842e1-d3cf-4da4-b09e-5eeadf8794ce" />
-</p>
-</br>
-#### confusion matrix:
-<br>
-<p align="center">
-<img width="519" height="435" alt="image" src="https://github.com/user-attachments/assets/611af314-c6d7-40d5-aa58-e749d449ffc1" />
-</p>  
-</br>
-### SVM(Support Vector Machine)
-#### classification report:
-<br>
-<p align="center">
-<img width="732" height="399" alt="image" src="https://github.com/user-attachments/assets/e0cb976f-8190-46e2-adad-58d25d7f9e13" />
-</p>
-</br>
-#### confusion matrix:
-<br>
-<p align="center">>
-<img width="519" height="435" alt="image" src="https://github.com/user-attachments/assets/ab7187fc-5b48-4580-8ca9-9107353d05ad" />
-</p>
-</br>
+## Evaluation Metrics
 
+---
+
+###  Random Forest
+
+####  Classification Report
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8e9842e1-d3cf-4da4-b09e-5eeadf8794ce" width="700"/>
+</p>
+
+<br>
+
+####  Confusion Matrix
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/611af314-c6d7-40d5-aa58-e749d449ffc1" width="500"/>
+</p>
+
+<br><br>
+
+---
+
+###  SVM (Support Vector Machine)
+
+#### Classification Report
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e0cb976f-8190-46e2-adad-58d25d7f9e13" width="700"/>
+</p>
+
+<br>
+
+####  Confusion Matrix
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ab7187fc-5b48-4580-8ca9-9107353d05ad" width="500"/>
+</p>
+
+<br>
 ### LSTM(Long Short Term Memory)
 
 
