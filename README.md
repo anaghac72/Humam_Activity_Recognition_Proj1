@@ -8,6 +8,7 @@
 
 # Problem Statement :-
 Human Activity Recognition (HAR) using smartphone sensor data is an essential predictive analytics task which provides benefits to healthcare and fitness tracking and smart environments. The sensors inside modern smartphones which include accelerometers and gyroscopes create continuous motion data through their measurement functions. The process of converting raw sensor data into accurate activity classifications presents ongoing difficulties for researchers in the field.
+
 The objective of this project is to develop a robust system that can accurately classify human physical activities—such as walking, sitting, standing, running, and stair climbing-using sensor data from smartphones. The project requires researchers to extract time-domain and frequency-domain features from the dataset and use Support Vector Machines (SVM), Random Forest and Long Short-Term Memory (LSTM) networks as machine learning models.
 
 # Dataset Details:-
@@ -107,18 +108,19 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 
 ## Evaluation Metrics :-
 ### Random Forest  
-classification report:
+#### classification report:
 <img width="740" height="420" alt="image" src="https://github.com/user-attachments/assets/8e9842e1-d3cf-4da4-b09e-5eeadf8794ce" />
-confusion matrix:
+#### confusion matrix:
 <img width="519" height="435" alt="image" src="https://github.com/user-attachments/assets/611af314-c6d7-40d5-aa58-e749d449ffc1" />
 
 ### SVM(Support Vector Machine)
-classification report:
+#### classification report:
 <img width="732" height="399" alt="image" src="https://github.com/user-attachments/assets/e0cb976f-8190-46e2-adad-58d25d7f9e13" />
-confusion matrix:
+#### confusion matrix:
 <img width="519" height="435" alt="image" src="https://github.com/user-attachments/assets/ab7187fc-5b48-4580-8ca9-9107353d05ad" />
 
 ### LSTM(Long Short Term Memory)
+
 
 
 
