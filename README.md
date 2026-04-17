@@ -231,7 +231,8 @@ Random Forest performed best in this project, achieving the highest accuracy and
 ### 🖥️ Home Interface
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=Streamlit+App+Home+Screen" width="800"/>
+  <img width="1600" height="730" alt="image" src="https://github.com/user-attachments/assets/e3af3d2e-6e4f-4c80-b9fd-64aeadcd1d5a" />
+
 </p>
 
 <br>
@@ -239,7 +240,12 @@ Random Forest performed best in this project, achieving the highest accuracy and
 ### 📂 File Upload & Prediction
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=CSV+Upload+and+Prediction" width="800"/>
+  <img width="1600" height="199" alt="image" src="https://github.com/user-attachments/assets/ad9c0e95-b9fa-4aff-a970-a1f8b738567d" />
+
+</p>
+<p>
+  <img width="1600" height="422" alt="image" src="https://github.com/user-attachments/assets/c2af27c8-e0d5-4055-91be-71b2be74c7e0" />
+
 </p>
 
 <br>
@@ -247,7 +253,12 @@ Random Forest performed best in this project, achieving the highest accuracy and
 ### 📊 Prediction Output & Visualization
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=Prediction+Results+Graphs" width="800"/>
+  <img width="1767" height="457" alt="image" src="https://github.com/user-attachments/assets/482b4bbe-eb35-4d76-9cac-a1acc007575a" />
+
+</p>
+<p align="center">
+  <img width="1600" height="570" alt="image" src="https://github.com/user-attachments/assets/bf46d5e2-50e1-45ad-b449-e7501e4b4dba" />
+
 </p>
 
 <br>
