@@ -162,10 +162,13 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 
 
 ## Model Comparison
+<br>
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/f1cb7fcc-68bc-44c8-8dcb-4d82335cbefb" />
-### Accuract Comparison
+<br>
+## Accuracy Comparison
+<br>
 <img width="567" height="455" alt="image" src="https://github.com/user-attachments/assets/8ffc85d4-7260-4b1b-aa50-6f7770248ea0" />
-
+<br>
 
 
 
