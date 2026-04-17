@@ -6,137 +6,121 @@ import joblib
 # -----------------------
 # PAGE CONFIG
 # -----------------------
-st.set_page_config(
-    page_title="HAR System",
-    page_icon="🧠",
-    layout="wide"
-)
+st.set_page_config(page_title="HAR System", layout="wide")
+
+st.title("🧠 Human Activity Recognition (HAR)")
+st.write("Predict human activities using trained ML models")
 
 # -----------------------
-# LOAD MODEL
+# LOAD MODEL SAFELY
 # -----------------------
-import os
+@st.cache_resource
+def load_model():
+    try:
+        model = joblib.load("app/rf_model.pkl")  # adjust path if needed
+        return model
+    except FileNotFoundError:
+        st.error("❌ Model file not found! Please check path.")
+        return None
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "rf_model.pkl")
-model = joblib.load(MODEL_PATH)  # or svm_model.pkl
+model = load_model()
 
 # -----------------------
 # LABEL MAP
 # -----------------------
 label_map = {
-    1: "🚶 WALKING",
-    2: "⬆️ WALKING_UPSTAIRS",
-    3: "⬇️ WALKING_DOWNSTAIRS",
-    4: "🪑 SITTING",
-    5: "🧍 STANDING",
-    6: "🛌 LAYING"
+    1: "WALKING",
+    2: "WALKING_UPSTAIRS",
+    3: "WALKING_DOWNSTAIRS",
+    4: "SITTING",
+    5: "STANDING",
+    6: "LAYING"
 }
 
 # -----------------------
-# HEADER
+# FILE UPLOAD
 # -----------------------
-st.title("🧠 Human Activity Recognition System")
-st.markdown("### Predict human activities using sensor data (UCI HAR Dataset)")
+uploaded_file = st.file_uploader("📂 Upload CSV File", type=["csv"])
 
-# -----------------------
-# SIDEBAR
-# -----------------------
-st.sidebar.header("⚙️ Settings")
+if uploaded_file is not None and model is not None:
 
-mode = st.sidebar.radio(
-    "Select Prediction Mode",
-    ["Manual Row", "Random Row", "Batch Prediction"]
-)
+    try:
+        df = pd.read_csv(uploaded_file)
 
-uploaded_file = st.sidebar.file_uploader("📂 Upload CSV File", type=["csv"])
+        st.success("✅ File uploaded successfully!")
+        st.write("Dataset Shape:", df.shape)
 
-# -----------------------
-# MAIN CONTENT
-# -----------------------
-if uploaded_file is not None:
-
-    df = pd.read_csv(uploaded_file)
-
-    st.subheader("📊 Dataset Overview")
-    col1, col2 = st.columns(2)
-
-    col1.metric("Rows", df.shape[0])
-    col2.metric("Columns", df.shape[1])
-
-    with st.expander("🔍 Preview Data"):
         st.dataframe(df.head())
 
-    # -----------------------
-    # MANUAL ROW
-    # -----------------------
-    if mode == "Manual Row":
+        # -----------------------
+        # VALIDATION
+        # -----------------------
+        if df.shape[1] != 561:
+            st.error(f"❌ Expected 561 features, got {df.shape[1]}")
+        else:
 
-        st.subheader("🎯 Manual Prediction")
+            st.subheader("🎯 Prediction Mode")
+            mode = st.selectbox(
+                "Choose mode",
+                ["Single Row", "Random Row", "Batch Prediction"]
+            )
 
-        row_index = st.slider("Select Row Index", 0, len(df)-1, 0)
+            # -----------------------
+            # SINGLE ROW
+            # -----------------------
+            if mode == "Single Row":
+                idx = st.slider("Select Row Index", 0, len(df) - 1, 0)
+                sample = df.iloc[idx].values.reshape(1, -1)
 
-        if st.button("Predict"):
+                pred = model.predict(sample)[0]
+                st.success(f"Prediction: {label_map[pred]}")
 
-            sample = df.iloc[row_index].values
+                # Probabilities
+                if hasattr(model, "predict_proba"):
+                    probs = model.predict_proba(sample)[0]
+                    prob_df = pd.DataFrame({
+                        "Activity": list(label_map.values()),
+                        "Probability": probs
+                    })
 
-            if len(sample) != 561:
-                st.error(f"❌ Expected 561 features, got {len(sample)}")
-            else:
-                pred = model.predict(sample.reshape(1, -1))[0]
+                    st.subheader("📊 Prediction Probabilities")
+                    st.bar_chart(prob_df.set_index("Activity"))
 
-                st.success("Prediction Result:")
-                st.markdown(f"## {label_map[pred]}")
+            # -----------------------
+            # RANDOM ROW
+            # -----------------------
+            elif mode == "Random Row":
+                idx = np.random.randint(0, len(df))
+                sample = df.iloc[idx].values.reshape(1, -1)
 
-    # -----------------------
-    # RANDOM ROW
-    # -----------------------
-    elif mode == "Random Row":
+                st.write(f"Random Row: {idx}")
 
-        st.subheader("🎲 Random Prediction")
+                pred = model.predict(sample)[0]
+                st.success(f"Prediction: {label_map[pred]}")
 
-        if st.button("Generate Random Prediction"):
+            # -----------------------
+            # BATCH PREDICTION
+            # -----------------------
+            elif mode == "Batch Prediction":
+                preds = model.predict(df)
 
-            row_index = np.random.randint(0, len(df))
-            sample = df.iloc[row_index].values
+                results = pd.DataFrame({
+                    "Prediction": [label_map[p] for p in preds]
+                })
 
-            st.write(f"Selected Row: {row_index}")
+                st.subheader("📊 Predictions (First 10)")
+                st.dataframe(results.head(10))
 
-            if len(sample) == 561:
-                pred = model.predict(sample.reshape(1, -1))[0]
+                # Count plot
+                st.subheader("📈 Activity Distribution")
+                counts = results["Prediction"].value_counts()
+                st.bar_chart(counts)
 
-                st.success("Prediction Result:")
-                st.markdown(f"## {label_map[pred]}")
-
-    # -----------------------
-    # BATCH PREDICTION
-    # -----------------------
-    elif mode == "Batch Prediction":
-
-        st.subheader("📊 Batch Predictions (First 10 Rows)")
-
-        if st.button("Run Batch Prediction"):
-
-            results = []
-
-            for i in range(min(10, len(df))):
-                sample = df.iloc[i].values
-
-                if len(sample) == 561:
-                    pred = model.predict(sample.reshape(1, -1))[0]
-                    results.append([i, label_map[pred]])
-
-            result_df = pd.DataFrame(results, columns=["Row", "Prediction"])
-
-            st.dataframe(result_df)
-
-# -----------------------
-# NO FILE
-# -----------------------
-else:
-    st.info("👈 Upload a CSV file from the sidebar to begin")
+    except Exception as e:
+        st.error(f"⚠️ Error processing file: {e}")
 
 # -----------------------
 # FOOTER
 # -----------------------
 st.markdown("---")
-st.markdown("Developed for Human Activity Recognition Project 🚀")
+st.markdown("Developed for Human Activity Recognition Project")
