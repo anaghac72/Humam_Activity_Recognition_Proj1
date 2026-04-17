@@ -198,6 +198,38 @@ Random Forest performed best in this project, achieving the highest accuracy and
 ## 📸 Application Screenshots
 
 <br>
+`md
+## ⚙️ Setup Instructions
+
+<br>
+
+### 1. Clone the Repository
+ ⁠bash
+git clone https://github.com/anaghac72/Human_Activity_Recognition_Proj1.git
+cd Human_Activity_Recognition_Proj1
+⁠ `
+
+<br>
+
+### 2. Create Virtual Environment
+
+ ⁠bash
+python -m venv venv
+
+
+⁠ * Windows:
+
+ ⁠bash
+venv\Scripts\activate
+
+
+⁠ * Mac/Linux:
+
+ ⁠bash
+source venv/bin/activate
+
+
+⁠ <br>
 
 ### 🔗 Live Application
 👉 https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app/
