@@ -99,7 +99,7 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 | Cross-Subject Validation | Ensures robustness and real-world applicability           |
 | Model Comparison         | Performance of SVM, Random Forest, and LSTM is analyzed   |
 
-# Results Summary
+# Results
 |     Model               |    Accuracy   |
 | ----------------------- |  ------------ |
 |     SVM                 |    ~ 95%      |
@@ -180,8 +180,20 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
   <img width="567" height="455" alt="Accuracy Comparison"
   src="https://github.com/user-attachments/assets/8ffc85d4-7260-4b1b-aa50-6f7770248ea0" />
 </p>
-
 <br>
+
+## Summary 
+
+Random Forest
+     - Achieved the highest accuracy
+     - Best overall performance across metrics
+SVM
+     - Good performance but slightly lower than RF
+LSTM
+     - Captures temporal patterns but requires more tuning
+### Conclusion
+
+Random Forest performed best in this project, achieving the highest accuracy and overall evaluation metrics. It effectively handled high-dimensional features and provided robust predictions. Although LSTM is suitable for time-series data, it did not outperform Random Forest in this implementation.
 
 ## 📸 Application Screenshots
 
