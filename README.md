@@ -318,47 +318,7 @@ streamlit run app/app.py
 [http://localhost:8501](http://localhost:8501)
 
 
-```
-### 🔗 Live Application
-👉 https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app/
-
-<br>
-
-### 🖥️ Home Interface
-
-<p align="center">
-  <img width="1600" height="730" alt="WhatsApp Image 2026-04-17 at 8 40 15 PM" src="https://github.com/user-attachments/assets/b9fabc70-2e4e-45ac-b0ed-573a182d6df2" />
-
-</p>
-
-<br>
-
-### 📂 File Upload & Prediction
-
-<p align="center">
-  <img width="1600" height="199" alt="WhatsApp Image 2026-04-17 at 8 40 41 PM" src="https://github.com/user-attachments/assets/02a8da3c-8516-48c6-ad72-8bd8cd851015" />
-
-</p>
-<p align="center">
-   <img width="1600" height="422" alt="WhatsApp Image 2026-04-17 at 8 41 19 PM" src="https://github.com/user-attachments/assets/f3544c4a-8feb-4d1e-98d5-c3f2cb6eca85" />
-
-
-</p>
-<br>
-
-### 📊 Prediction Output & Visualization
-
-<p align="center">
-
-</p>
-<p align="center">
-  <img width="1600" height="570" alt="WhatsApp Image 2026-04-17 at 8 41 38 PM" src="https://github.com/user-attachments/assets/923f5b40-3ed4-428f-a84e-9467e31b87e7" />
-
-</p>
-
-<br>
-
-```
+``
 
 # Live Streamlit Deployment
 https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app
