@@ -189,8 +189,8 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 <br>
 
 <p align="center">
-  <img width="630" height="470" alt="Model Comparison"
-  src="https://github.com/user-attachments/assets/f1cb7fcc-68bc-44c8-8dcb-4d82335cbefb" />
+  <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/5b610fc8-4df7-4502-af93-202c6baa22ae" />
+
 </p>
 
 <br><br>
@@ -200,8 +200,8 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 <br>
 
 <p align="center">
-  <img width="567" height="455" alt="Accuracy Comparison"
-  src="https://github.com/user-attachments/assets/8ffc85d4-7260-4b1b-aa50-6f7770248ea0" />
+  <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/5e9c2a3a-474a-48bf-b1f2-5da36f1a8b8d" />
+
 </p>
 <br>
 
