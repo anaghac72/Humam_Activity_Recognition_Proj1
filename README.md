@@ -219,16 +219,16 @@ LSTM
 Random Forest performed best in this project, achieving the highest accuracy and overall evaluation metrics. It effectively handled high-dimensional features and provided robust predictions. Although LSTM is suitable for time-series data, it did not outperform Random Forest in this implementation.
 
 
-## 📸 Application Screenshots
+#  Application Screenshots
 
 <br>
 
-### 🔗 Live Application
-👉 https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app/
+###  Live Application
+ https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app/
 
 <br>
 
-### 🖥️ Home Interface
+###  Home Interface
 
 <p align="center">
   <img width="1600" height="730" alt="image" src="https://github.com/user-attachments/assets/e3af3d2e-6e4f-4c80-b9fd-64aeadcd1d5a" />
@@ -237,7 +237,7 @@ Random Forest performed best in this project, achieving the highest accuracy and
 
 <br>
 
-### 📂 File Upload & Prediction
+###  File Upload & Prediction
 
 <p align="center">
   <img width="1600" height="199" alt="image" src="https://github.com/user-attachments/assets/ad9c0e95-b9fa-4aff-a970-a1f8b738567d" />
@@ -266,7 +266,7 @@ Random Forest performed best in this project, achieving the highest accuracy and
 <br>
 
 
-## ⚙️ Setup Instructions
+#  Setup Instructions
 
 <br>
 
@@ -318,6 +318,10 @@ streamlit run app/app.py
 [http://localhost:8501](http://localhost:8501)
 
 ### 6. Project structure
+```markdown
+
+```
+
 Human_Activity_Recognition_Proj1/
 │
 ├── app/
@@ -353,8 +357,9 @@ Human_Activity_Recognition_Proj1/
 ├── requirements.txt
 └── README.md
 
+```
+```
 
-``
 
 # Live Streamlit Deployment
 https://humanactivityrecognitionproj1-ayeoz2sbtfwgstmhxy5xtl.streamlit.app
