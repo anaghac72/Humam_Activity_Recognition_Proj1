@@ -207,16 +207,24 @@ Dataset link:- https://drive.google.com/drive/folders/14wQNbXFOY0CyP2ej2WcB5WXsz
 
 ## Summary 
 
+Support Vector Machine (SVM)
+- Achieved the highest accuracy (~95%)
+- Performed best across most evaluation metrics
+
 Random Forest
-     - Achieved the highest accuracy
-     - Best overall performance across metrics
-SVM
-     - Good performance but slightly lower than RF
+- Delivered strong and stable performance
+- Slightly lower accuracy compared to SVM
+
 LSTM
-     - Captures temporal patterns but requires more tuning
+- Captures temporal patterns effectively
+- Performance was slightly lower due to need for further tuning
 ### Conclusion
 
-Random Forest performed best in this project, achieving the highest accuracy and overall evaluation metrics. It effectively handled high-dimensional features and provided robust predictions. Although LSTM is suitable for time-series data, it did not outperform Random Forest in this implementation.
+Among the three models, Support Vector Machine (SVM) achieved the best performance with the highest accuracy and strong evaluation metrics. Its effectiveness can be attributed to its ability to handle high-dimensional feature spaces efficiently.
+
+Random Forest also performed well and provided robust predictions, but slightly underperformed compared to SVM. The LSTM model, although suitable for time-series data, did not outperform classical machine learning models in this implementation, likely due to limited tuning and dataset size.
+
+Overall, SVM proved to be the most suitable model for this Human Activity Recognition task.
 
 
 #  Application Screenshots
